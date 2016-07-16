@@ -32,7 +32,7 @@ values."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     spell-checking
+     ;; spell-checking
      (syntax-checking :variables
                       syntax-checking-enable-by-default nil)
      (colors :variables
