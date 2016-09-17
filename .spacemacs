@@ -32,20 +32,25 @@ values."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     spell-checking
-     syntax-checking
-     ;; (syntax-checking :variables
-     ;;                  syntax-checking-enable-by-default nil)
+     ;; spell-checking
+     (syntax-checking :variables
+                      syntax-checking-enable-by-default nil)
+     (colors :variables
+             colors-enable-rainbow-identifiers nil
+             colors-enable-nyan-cat-progress-bar t)
      version-control
-     javascript
+     ;; javascript
      react
-     themes-megapack
+     ;; themes-megapack
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages
+   '(
+     js2-mode
+     )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -296,6 +301,10 @@ you should place your code here."
     (exec-path-from-shell-initialize)
     )
   )
+(setq js2-mode-toggle-warnings-and-errors nil)
+(setq js2-strict-missing-semi-warning nil)
+(setq js2-indent-switch-body 2)
+(setq js2-missing-semi-one-line-override t)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
