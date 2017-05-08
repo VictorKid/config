@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/VictorKid/.oh-my-zsh
+export ZSH=/Users/victor/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,14 +53,16 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export NVM_DIR=~/.nvm
-export GEM_HOME=$HOME/.gem/ruby/2.0.0
-export PATH=$GEM_HOME/bin:$PATH
+# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export NVM_DIR="/Users/victor/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export GEM_HOME=$HOME/.gem/ruby/2.0.0
+export PATH=$GEM_HOME/bin:$PATH
+
 source $ZSH/oh-my-zsh.sh
-source $(brew --prefix nvm)/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -86,4 +88,13 @@ source $(brew --prefix nvm)/nvm.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Export meteor private package
+export PACKAGE_DIRS=$HOME/gwz/meteor-package 
+
 alias t="trash"
+alias react="create-react-app"
+alias serve="pushstate-server"
+alias y="yarn"
+
+export PATH="$HOME/.yarn/bin:$PATH"
