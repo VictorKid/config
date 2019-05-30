@@ -96,5 +96,35 @@ alias t="trash"
 alias react="create-react-app"
 alias serve="pushstate-server"
 alias y="yarn"
+alias rn="react-native"
 
 export PATH="$HOME/.yarn/bin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# export GOPATH
+export GOPATH=$HOME/honestbee/golang
+export PATH="$HOME/honestbee/golang/bin:$PATH"
+
+# For compilers to find zlib you may need to set:
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+
+# For pkg-config to find zlib you may need to set:
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+
+#For compilers to find sqlite you may need to set:
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
+
+#For pkg-config to find zlib you may need to set:
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
+eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+
+#For Zen micro service
+export DB_USER=victorlai
+export DB_HOST=localhost
+export DB_NAME=dealsdb
+export DB_PASSWORD=24802297
+export ZEN_DATABASE_URI=localhost
+export ZEN_DATABASE_NAME=zen
