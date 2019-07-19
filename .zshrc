@@ -56,9 +56,6 @@ plugins=(git)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export NVM_DIR="/Users/victorlai/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 export GEM_HOME=$HOME/.gem/ruby/2.0.0
 export PATH=$GEM_HOME/bin:$PATH
 
@@ -97,13 +94,14 @@ alias react="create-react-app"
 alias serve="pushstate-server"
 alias y="yarn"
 alias rn="react-native"
+alias k="kubectl"
+alias d="docker"
+alias nv="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
 export PATH="$HOME/.yarn/bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# export GOPATH
-export GOPATH=$HOME/honestbee/golang
-export PATH="$HOME/honestbee/golang/bin:$PATH"
 
 # For compilers to find zlib you may need to set:
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
@@ -128,3 +126,11 @@ export DB_NAME=dealsdb
 export DB_PASSWORD=24802297
 export ZEN_DATABASE_URI=localhost
 export ZEN_DATABASE_NAME=zen
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#Go development
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
