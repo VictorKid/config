@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/victor.lai/grab/fe-interview/currying'
+let g:netrw_dirhist_8='/Users/victor.lai/grab/web-kit/web-app/packages/ad-manager-ui/modules/ssr/common/Grid/ColumnHeader'
+let g:netrw_dirhist_7='/Users/victor.lai/grab/fe-interview/promise'
+let g:netrw_dirhist_6='/Users/victor.lai/grab/web-kit/web-app/packages/ad-manager-ui/node_modules/d3-array'
+let g:netrw_dirhist_5='/Users/victor.lai/grab/web-kit/web-app/build-tools/webpack-blocks'
+let g:netrw_dirhist_4='/Users/victor.lai/grab/web-kit/web-app/packages/ad-manager-ui/src/components/ssr/pages'
+let g:netrw_dirhist_3='/Users/victor.lai/grab/web-kit/.gitlab'
+let g:netrw_dirhist_2='/Users/victor.lai/grab'
+let g:netrw_dirhist_1='/Users/victor.lai/grab/grabdocs'
+let g:netrw_dirhist_0='/Users/victor.lai/grab/fe-interview'
